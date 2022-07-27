@@ -2,13 +2,20 @@ import React from "react";
 import "./Sidebar.css";
 import SidebarChat from "./SidebarChat";
 
+import "bootstrap-icons/font/bootstrap-icons.css";
+import { Avatar, IconButton } from "@mui/material";
+import DonutLargeIcon from "@mui/icons-material/DonutLarge";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import ChatIcon from "@mui/icons-material/Chat";
+
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__header">
-        {/* <Avatar src="https://cdn140.picsart.com/298405491215211.png" /> */}
+        <Avatar src="https://cdn140.picsart.com/298405491215211.png" />
         <div className="sidebar__headerRight">
-          {/* <IconButton>
+          <IconButton>
             <DonutLargeIcon />
           </IconButton>
           <IconButton>
@@ -16,12 +23,12 @@ function Sidebar() {
           </IconButton>
           <IconButton>
             <MoreVertIcon />
-          </IconButton> */}
+          </IconButton>
         </div>
       </div>
       <div className="sidebar__search">
         <div className="sidebar__searchContainer">
-          {/* <SearchOutlinedIcon /> */}
+          <SearchOutlinedIcon />
           <input type="text" placeholder="Search or start new chat" />
         </div>
       </div>

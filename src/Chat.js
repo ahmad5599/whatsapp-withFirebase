@@ -1,26 +1,33 @@
 import React from "react";
 import "./Chat.css";
 
+import { Avatar, IconButton } from "@mui/material";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import MicIcon from "@mui/icons-material/Mic";
+import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
+
 function Chat() {
   return (
     <div className="chat">
       <div className="chat__header">
-        {/* <Avatar /> */}
+        <Avatar />
         <div className="chat__headerInfo">
           <h3>Room name</h3>
           <p>Last seen at...</p>
         </div>
 
         <div className="chat__headerRight">
-          {/* <IconButton>
-            <SearchOutlined />
+          <IconButton>
+            <SearchOutlinedIcon />
           </IconButton>
           <IconButton>
-            <AttachFile />
+            <AttachFileIcon />
           </IconButton>
           <IconButton>
-            <MoreVert />
-          </IconButton> */}
+            <MoreVertIcon />
+          </IconButton>
         </div>
       </div>
 
@@ -73,12 +80,12 @@ function Chat() {
       </div>
 
       <div className="chat__footer">
-        {/* <EmojiEmotionsOutlinedIcon /> */}
+        <EmojiEmotionsOutlinedIcon />
         <form>
           <input type="text" placeholder="Type a message" />
           <button type="submit">Send a message</button>
         </form>
-        {/* <MicIcon /> */}
+        <MicIcon />
       </div>
     </div>
   );
